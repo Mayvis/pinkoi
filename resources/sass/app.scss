@@ -3,3 +3,46 @@
 @tailwind components;
 
 @tailwind utilities;
+
+//  reset
+ul, li {
+    @apply tw-list-reset;
+}
+
+a {
+    @apply tw-no-underline tw-text-grey-darkest tw-text-grey-darkest;
+}
+
+// logo
+.tw-logo {
+    @apply tw-py-2 tw-mr-4;
+
+    img {
+        width: 128px;
+    }
+}
+
+.tw-header-tag {
+    @apply tw-flex tw-text-grey-dark tw-font-thin tw-text-sm;
+
+    li {
+        @apply tw-pr-2 tw-text-13;
+    }
+}
+
+.tw-shopping-cart:hover path {
+    fill: #f66d9b;
+    transition: all ease 0.3s;
+}
+
+.tw-channels {
+    @apply tw-mx-auto tw-flex tw-justify-between;
+
+    li {
+        @apply tw-mx-4;
+
+        a {
+            @apply tw-inline-block tw-py-2 tw-text-sm;
+        }
+    }
+}

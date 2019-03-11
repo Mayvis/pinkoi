@@ -16,12 +16,15 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
-        @include('layouts.nav')
+<div id="app">
+    @include('layouts.header')
 
-        <main class="py-4">
-            @yield('content')
-        </main>
-    </div>
+    {{--    channel    --}}
+    @include('layouts.nav')
+
+    <main class="py-4">
+        @yield('content')
+    </main>
+</div>
 </body>
 </html>

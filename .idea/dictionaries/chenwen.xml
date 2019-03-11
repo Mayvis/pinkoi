@@ -5,7 +5,10 @@
       <w>bcrypt</w>
       <w>csrf</w>
       <w>laracasts</w>
+      <w>navbar</w>
       <w>pinkoi</w>
+      <w>toggler</w>
+      <w>vbar</w>
     </words>
   </dictionary>
 </component>
