@@ -25,6 +25,11 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        // liangyu為admin
+        Gate::before(function ($user) {
+            if ($user->email === 'liangyu@test.com') {
+                return true;
+            }
+        });
     }
 }
